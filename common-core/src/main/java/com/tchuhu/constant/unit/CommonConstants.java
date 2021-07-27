@@ -33,12 +33,12 @@ public interface CommonConstants {
     /**
      * 前端工程名
      */
-    String FRONT_END_PROJECT = "shiyou-ui";
+    String FRONT_END_PROJECT = "tchuhu-ui";
 
     /**
      * 后端工程名
      */
-    String BACK_END_PROJECT = "shiyou";
+    String BACK_END_PROJECT = "tchuhu";
 
     /**
      * 成功标记

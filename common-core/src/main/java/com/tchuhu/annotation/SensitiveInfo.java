@@ -2,6 +2,7 @@ package com.tchuhu.annotation;
 
 
 
+import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.tchuhu.config.SensitiveInfoSerialize;
 import com.tchuhu.constant.enums.SensitiveType;
@@ -17,6 +18,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.TYPE, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
+@JacksonAnnotationsInside
 @JsonSerialize(using = SensitiveInfoSerialize.class)
 public @interface SensitiveInfo {
 
