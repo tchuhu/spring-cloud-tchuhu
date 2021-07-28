@@ -1,7 +1,9 @@
 package com.tchuhu.domain;
 
-import com.tchuhu.annotation.SensitiveInfo;
-import com.tchuhu.constant.enums.SensitiveType;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.tchuhu.common.core.annotation.SensitiveInfo;
+import com.tchuhu.common.core.config.SensitiveInfoSerialize;
+import com.tchuhu.common.core.constant.enums.SensitiveType;
 import lombok.Data;
 
 /**
@@ -16,4 +18,9 @@ public class User {
 
     @SensitiveInfo(value = SensitiveType.MOBILE)
     private String phone;
+
+    @JsonSerialize(using = SensitiveInfoSerialize.class)
+    public String getPhone() {
+        return phone;
+    }
 }

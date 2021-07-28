@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.tchuhu.common.core.config.JacksonConfig,\
+  com.tchuhu.common.core.config.RedisTemplateConfig,\
+  com.tchuhu.common.core.config.RestTemplateConfig,\
+  com.tchuhu.common.core.config.FilterIgnorePropertiesConfig,\
+  com.tchuhu.common.core.exception.GlobalExceptionHandler,\
+  com.tchuhu.common.core.util.SpringContextHolder
